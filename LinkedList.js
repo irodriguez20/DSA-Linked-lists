@@ -154,9 +154,22 @@ function main() {
 
 }
 
+function display() {
+    console.log(main())
+}
 
+function isEmpty() {
+    const SLL = new LinkedList();
+    let currNode = SLL.head;
+    if (currNode === null) {
+        return 'Is empty';
+    }
+    else {
+        return currNode;
+    }
 
+}
 
-console.log(main())
-
+console.log(display());
+console.log(isEmpty());
 
